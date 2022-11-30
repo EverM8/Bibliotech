@@ -68,7 +68,7 @@ export class LivrosComponent implements OnInit {
         this.notification.showMessege('Cadastrado com sucesso!', 'success');
         this.iniciarTabela();
       })
-    }
+    } else { this.notification.showMessege("Dados inválidos","error") }
   }
 
   public addImg(event: any): void {

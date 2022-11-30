@@ -59,7 +59,7 @@ export class EditarEmprestimoComponent implements OnInit {
         this.notification.showMessege("Atualizado com sucesso!", "success");
         this.router.navigate(['/painel']);
       })
-    }
+    } else { this.notification.showMessege("Dados inválidos","error") }
   }
   
 

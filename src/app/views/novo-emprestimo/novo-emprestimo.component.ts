@@ -48,7 +48,7 @@ export class NovoEmprestimoComponent implements OnInit {
         this.notification.showMessege("Criado com sucesso!", "success");
         this.router.navigate(['/painel']);
       })
-    }
+    } else { this.notification.showMessege("Dados inválidos","error") }
   }
   
 
